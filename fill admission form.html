@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Ucc Admission Form</title>
+    <link rel="stylesheet" href="/css/create account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="./landing page.html"><img src="/images/logo.png" alt="ucc logo"></a>
+                <a href="./landing page.html"><h3>APPLY UCC</h3></a>
+            </div>
+            <div class="menu-option">
+                <h3 id="logout"><a href="/landing page.html">logout</a></h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="welcome-talk">
+                <h1>Enrollment Form</h1>
+                <h2>Enter Enrollment Details</h2>
+            </div>
+            <div class="form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="wrapper">
+                        <div class="image-container">
+                            <img src="./images/person.png" alt="upload image">
+                        </div>
+                        <label for="image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-e</title><circle cx="256" cy="272" r="64"/><path d="M432,144H373c-3,0-6.72-1.94-9.62-5L337.44,98.06a15.52,15.52,0,0,0-1.37-1.85C327.11,85.76,315,80,302,80H210c-13,0-25.11,5.76-34.07,16.21a15.52,15.52,0,0,0-1.37,1.85l-25.94,41c-2.22,2.42-5.34,5-8.62,5v-8a16,16,0,0,0-16-16H100a16,16,0,0,0-16,16v8H80a48.05,48.05,0,0,0-48,48V384a48.05,48.05,0,0,0,48,48H432a48.05,48.05,0,0,0,48-48V192A48.05,48.05,0,0,0,432,144ZM256,368a96,96,0,1,1,96-96A96.11,96.11,0,0,1,256,368Z"/></svg>
+                        </label>
+                        <input type="file" name="image" id="image" accept="image/*" hidden>
+                    </div>
+                    <div class="select-input-group">
+                        <h4 class="select-heading">Gender</h4>
+                        <select name="gender">
+                            <option value=""></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="select-input-group">
+                        <p class="select-heading">Date of Birth</p>
+                        <input type="date" name="date_of_birth" placeholder="enter date of birth">
+                       
+                    </div>
+                    <div class="two-input-group">
+                        <input type="text" name="former-school" placeholder="Former School">
+                        <input type="text" name="aggregate" placeholder="Aggregate">
+                    </div>
+                    <div class="select-input-group">
+                        <h4 class="select-heading">Programme of Choice</h4>
+                        <select name="programme">
+                            <option value=""></option>
+                            <option value="Health Information">Health Information</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="International Business">International Business</option>
+                            <option value="Political Science">Political Science</option>
+                        </select>
+                    </div>
+                    <div class="select-input-group">
+                        <h4 class="select-heading">Hall of Residence</h4>
+                        <select name="hall-of-residence">
+                            <option value=""></option>
+                            <option value="SRC">SRC</option>
+                            <option value="Valco">Valco</option>
+                            <option value="Adehye">Adehye</option>
+                            <option value="SSNIT">SSNIT</option>
+                            <option value="Casford">Casford</option>
+                        </select>
+                    </div>
+                    <div class="select-input-group">
+                        <h4 class="select-heading">Cafeteria Services</h4>
+                        <select name="cafeteria-services">
+                            <option value=""></option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                       <a href="/show bill.html"><input type="button" value="Save Details" name="create" id="create-account-btn"></a> 
+                    </div>                    
+                </form>
+            </div>         
+        </div>
+        <br>
+        <div class="developer">
+            <small>Powered by <span>mamba lev</span></small>
+            <img src="/images/mamba.png" alt="mamba logo">
+        </div>
+    </div>
+
+
+    <script>
+        let imageInput = document.querySelector("#image");
+        imageInput.onchange = function(e){
+            if(e.target.files.length > 0){
+                src= URL.createObjectURL(e.target.files[0]);
+                image = document.querySelector(".image-container img");
+                image.src=src;
+            }
+        }
+    </script>
+</body>
+</html>

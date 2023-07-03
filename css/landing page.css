@@ -1,0 +1,163 @@
+@font-face {
+    font-family: lilita;
+    src: url(/fonts/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: lilita;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    width: 100vw;
+    padding: 0.4rem 5%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #2C3690;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav .logo img{
+    width: 3.0rem;
+    margin-right: 0.4rem;
+}
+
+.nav .logo h3{
+    font-size: 1.0rem;
+    color: #ED1C24;
+    font-weight: 800;
+}
+
+.nav .menu-option a{
+    cursor: pointer;
+    color: #2C3690;
+}
+
+.content{
+    border: 2px solid rgb(219, 216, 216);
+    width: 25%;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.content .welcome-talk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    min-height: 15rem;
+    justify-content: space-around;
+}
+.content .welcome-talk h1{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.content .welcome-talk h2{
+    color: rgba(0, 0, 0, 0.58);
+}
+.content .button{
+    margin-bottom: 5rem;
+}
+
+.content .button button{
+    width: 16rem;
+    height: 3rem;
+    padding: 1rem 2rem 3rem 2rem;
+    background: #2C3690;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.content .have-account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .have-account p{
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+.content .have-account .login{
+    color: #2C3690;
+    font-family: lilita;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.developer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer img{
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width:1500px){
+    .content{
+        width: 80%;
+    }
+}
+
+@media (max-width:1280px){
+    .content{
+        width: 80%;
+    }
+}
+
+@media (max-width:768px){
+    .content{
+        width: 80%;
+    }
+}
+
+
+@media (max-width:480px){
+    .content{
+        width: 80%;
+    }
+}
